@@ -7,17 +7,16 @@
 
   <body>
 
-    <h1> Hello there! </h1>
+    <h1> Hello there! 😀 </h1>
 
     <form action="/birthday" method="post">
-      <label for="name">
-        What's your name?
+      <div id="name">
+        <label for="name">What's your name?</label>
         <input type="text" name="name">
-      </label>
-      <label for="date">
-        </label>
-        When's your birthday?
-        <input type="number" name="day">
+      </div>
+      <div id="date">
+        <label for="date">When's your birthday?</label>
+        <input type="number" name="day" min="1" max="31">
         <select name="month">
           <option value="january">January</option>
           <option value="february">February</option>
@@ -32,8 +31,11 @@
           <option value="november">November</option>
           <option value="december">December</option>
         </select>
-        <br><br>
-      <input type="submit" value="Go!">
+      </div>
+      <br>
+      <div id="submit">
+        <input type="submit" value="Go!">
+      </div>
     </form>
 
   </body>
