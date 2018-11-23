@@ -7,6 +7,6 @@ feature 'days until birthday' do
     select 'December'
     fill_in 'year', with: 2019
     click_on 'Go'
-    expect(page).to have_content 'Your next birthday will be in 364 days'
+    expect(page).to have_content 'Your next birthday will be in 364 days, Tomas'
   end
 end

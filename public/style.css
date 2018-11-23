@@ -1,9 +1,26 @@
-h1 {
+
+.birthday-message h1 {
   font-size: 2rem;
-  color: orange;
+  font-family: 'Roboto', sans-serif;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
   text-align: center;
 }
 
-/* body { */
-  /* background: url('/image.jpeg');
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  /* left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center; */
+}

@@ -3,6 +3,7 @@
 
   <head>
     <link href='/style.css' rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
@@ -10,11 +11,12 @@
     <h1> Hello there! 😀 </h1>
 
     <form action="/birthday" method="post">
-      <div id="name">
+      <div class="name">
         <label for="name">What is your name?</label>
         <input type="text" name="name">
       </div>
-      <div id="date">
+      <br>
+      <div class="date">
         <label for="date">When is your next birthday?</label>
         <input type="number" name="day" min="1" max="31">
         <select name="month">
@@ -34,7 +36,7 @@
         <input type="number" name="year" min="2018" max="2020">
       </div>
       <br>
-      <div id="submit">
+      <div class="submit">
         <input type="submit" value="Go!">
       </div>
     </form>

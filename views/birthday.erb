@@ -3,16 +3,21 @@
 
   <head>
     <link href='/style.css' rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
+    <div class='birthday-message'>
       <% if @days == 0 %>
-    <h1>Happy Birthday <%=@name%>!</h1>
-      <% elsif @days < 0 %>
-    <h1> This birthday has already passed</h1>
+    <h1>Happy Birthday <%=@name%>! 🥳 </h1>
+      <% elsif @days <= 0 %>
+    <h1>Sorry <%=@name%>, your birthday has already happened this year 😳 </h1>
+      <% elsif @days == 1 %>
+    <h1>Your next birthday will be in <%=@days%> day, <%=@name%> 🎂 📆</h1>
       <% else %>
-    <h1>Your next birthday will be in <%=@days%> days</h1>
+    <h1>Your next birthday will be in <%=@days%> days, <%=@name%> 🎂 📆</h1>
       <% end %>
+    </div>
   </body>
 
 </html>
