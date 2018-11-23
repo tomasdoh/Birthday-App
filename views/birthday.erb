@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href='/style.css' rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+      <% if @days == 0 %>
+    <h1>Happy Birthday <%=@name%>!</h1>
+      <% elsif @days < 0 %>
+    <h1> This birthday has already passed</h1>
+      <% else %>
+    <h1>Your next birthday will be in <%=@days%> days</h1>
+      <% end %>
+  </body>
+
+</html>
